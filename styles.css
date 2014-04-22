@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image:url("http://www.colourbox.com/preview/5899155-628755-race-horizontal-background.jpg");
+  background-size: 1500px;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{

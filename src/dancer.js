@@ -10,6 +10,7 @@ var Dancer = function(top, left, timeBetweenSteps){
   this.top = top;
   this.left = left;
   this.dancerType = "dancer";
+  this.speed = 50;
 
 
 
@@ -22,6 +23,14 @@ var Dancer = function(top, left, timeBetweenSteps){
 Dancer.prototype.lineup = function(top){
   var styleSettings = {
     top: top
+  };
+  this.$node.css(styleSettings);
+
+};
+
+Dancer.prototype.updateSpeed = function(left){
+  var styleSettings = {
+    left: left
   };
   this.$node.css(styleSettings);
 
@@ -61,7 +70,7 @@ Dancer.prototype.updatePosition = function(){
   var styleSettings = {
     left: this.left
   };
-  this.left = this.left + 50;
+  this.left = this.left + this.speed;
   if (this.left > $(document).width()){
     this.left = 0;
   }
@@ -88,16 +97,6 @@ Dancer.prototype.changeColor = function(color){
   }
   var styleSettings = {
     backgroundColor: color,
-  };
-  this.$node.css(styleSettings);
-};
-
-Dancer.prototype.changeSize = function(){
-  // Use css top and left properties to position our <span> tag
-  // where it belongs on the page. See http://api.jquery.com/css/
-  var temp = this.$node.css.styleSettitng.backgroundSize * 1.1;
-  var styleSettings = {
-    backgroundSize: temp
   };
   this.$node.css(styleSettings);
 };

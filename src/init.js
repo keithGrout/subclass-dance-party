@@ -12,7 +12,11 @@ $(document).ready(function(){
     }
   });
 
-
+  $(".addTurbo").on("click", function(event){
+    $(".dancer").on("mouseover", function(event){
+      $(this).remove();
+    });
+  });
 
 
   $(".addDancerButton").on("click", function(event){
