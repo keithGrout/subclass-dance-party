@@ -25,3 +25,25 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.square{
+  position:absolute;
+  box-shadow: 10px 10px 5px #888888;
+  border-left: 10px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 50px solid transparent;
+  background-image: url("http://www.gillette.com/fresh-blade-better-shave/en-US/assets/img/racecar.png");
+  background-repeat:no-repeat;
+  background-size: 150px;
+}
+
+.triangle{
+  position:absolute;
+  box-shadow: 10px 10px 5px #888888;
+  border-left: 10px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 50px solid transparent;
+  background-image: url("http://img4.wikia.nocookie.net/__cb20130429202207/motorworld/images/1/12/Berliner_Race_Car.png");
+  background-repeat:no-repeat;
+  background-size: 100px;
+
+}
