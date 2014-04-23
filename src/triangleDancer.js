@@ -2,7 +2,7 @@ var TriangleDancer = function(top, left, timeBetweenSteps){
   //this = Object.create(BlinkyDancer.prototype); (implicit)
 
   Dancer.call(this,top, left, timeBetweenSteps);
-  //this.$node = $('<span class="triangle"></span>');
+  this.$node = $('<span class="triangle"></span>');
   this.setPosition(top, left);
   this.dancerType = "triangleDancer";
 

@@ -12,8 +12,20 @@ $(document).ready(function(){
     }
   });
 
-  $(".addTurbo").on("click", function(event){
+  $(".deleteBlinky").on("click", function(event){
     $(".dancer").on("mouseover", function(event){
+      $(this).remove();
+    });
+  });
+
+  $(".deleteTriangle").on("click", function(event){
+    $(".triangle").on("mouseover", function(event){
+      $(this).remove();
+    });
+  });
+
+  $(".deleteSquare").on("click", function(event){
+    $(".square").on("mouseover", function(event){
       $(this).remove();
     });
   });
